@@ -1,5 +1,6 @@
 import Counter from "./components/Counter"
 import LiveCharacter from "./components/LiveCharacter"
+import ToggleText from "./components/ToggleText"
 
 const App = () => {
   return (
@@ -7,6 +8,8 @@ const App = () => {
       <Counter />
       <hr className="my-4 text-slate-500"/>
       <LiveCharacter />
+      <hr className="my-4 text-slate-500"/>
+      <ToggleText />
     </div>
   )
 }

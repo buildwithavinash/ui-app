@@ -11,8 +11,11 @@ const LiveCharacter = () => {
         <div>
             <textarea name="" id="" value={char} onChange={(e)=>setChar(e.target.value)} className="border border-slate-500"></textarea>
         </div>
-        <div>
+        <div className="text-center">
             <p>Character count:{char.length}</p>
+            {char.length >= 10 ? (
+                <p className="text-red-500">Limit reached</p>
+            ) : null}
         </div>
 
         <button onClick={()=>setChar("")}>Reset</button>
